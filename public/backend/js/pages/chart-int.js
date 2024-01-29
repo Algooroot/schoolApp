@@ -241,7 +241,7 @@ var Widgetschart = function() {
         if(element) {
 
 
-            // Basic setup
+            // Basic Setup
             // ------------------------------
 
             // Define main variables

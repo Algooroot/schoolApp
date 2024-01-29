@@ -1073,7 +1073,7 @@
 
       // update slider.slides
       slider.slides = $(slider.vars.selector + ':not(.clone)', slider);
-      // re-setup the slider to accomdate new slide
+      // re-Setup the slider to accomdate new slide
       slider.setup();
 
       //FlexSlider: added() Callback

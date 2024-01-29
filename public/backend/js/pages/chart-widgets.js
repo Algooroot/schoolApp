@@ -235,7 +235,7 @@ var Widgetschart = function() {
         if(element) {
 
 
-            // Basic setup
+            // Basic Setup
             // ------------------------------
 
             // Add data set
@@ -455,7 +455,7 @@ var Widgetschart = function() {
         if(element) {
 
 
-            // Basic setup
+            // Basic Setup
             // ------------------------------
 
             // Add data set
@@ -800,7 +800,7 @@ var Widgetschart = function() {
         if(element) {
 
 
-            // Basic setup
+            // Basic Setup
             // ------------------------------
 
             // Define main variables

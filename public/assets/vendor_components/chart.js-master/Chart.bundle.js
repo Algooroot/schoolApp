@@ -16243,7 +16243,7 @@ var Legend = Element.extend({
 			var labelFont = helpers.fontString(fontSize, fontStyle, fontFamily);
 			var cursor;
 
-			// Canvas setup
+			// Canvas Setup
 			ctx.textAlign = 'left';
 			ctx.textBaseline = 'middle';
 			ctx.lineWidth = 0.5;

@@ -266,7 +266,7 @@
               }
             }
 
-            // setup flags to prevent event duplication
+            // Setup flags to prevent event duplication
             if (watchedEvent === "") {
               watchedEvent = event.type;
             }
@@ -291,7 +291,7 @@
               }
             }
 
-            // setup flags to prevent event duplication
+            // Setup flags to prevent event duplication
             if (watchedEvent === "") {
               watchedEvent = event.type;
             }
@@ -344,7 +344,7 @@
               slider.flexAnimate(target, slider.vars.pauseOnAction);
             }
 
-            // setup flags to prevent event duplication
+            // Setup flags to prevent event duplication
             if (watchedEvent === "") {
               watchedEvent = event.type;
             }
@@ -398,7 +398,7 @@
               }
             }
 
-            // setup flags to prevent event duplication
+            // Setup flags to prevent event duplication
             if (watchedEvent === "") {
               watchedEvent = event.type;
             }
@@ -1073,7 +1073,7 @@
 
       // update slider.slides
       slider.slides = $(slider.vars.selector + ':not(.clone)', slider);
-      // re-setup the slider to accomdate new slide
+      // re-Setup the slider to accomdate new slide
       slider.setup();
 
       //FlexSlider: added() Callback
@@ -1099,7 +1099,7 @@
 
       // update slider.slides
       slider.slides = $(slider.vars.selector + ':not(.clone)', slider);
-      // re-setup the slider to accomdate new slide
+      // re-Setup the slider to accomdate new slide
       slider.setup();
 
       // FlexSlider: removed() Callback
@@ -1180,7 +1180,7 @@
     end: function(){},              //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)
     added: function(){},            //{NEW} Callback: function(slider) - Fires after a slide is added
     removed: function(){},           //{NEW} Callback: function(slider) - Fires after a slide is removed
-    init: function() {},             //{NEW} Callback: function(slider) - Fires after the slider is initially setup
+    init: function() {},             //{NEW} Callback: function(slider) - Fires after the slider is initially Setup
 	rtl: false             //{NEW} Boolean: Whether or not to enable RTL mode
   };
 

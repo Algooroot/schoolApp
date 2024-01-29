@@ -835,7 +835,7 @@ extend( QUnit, {
 		}
 	},
 
-	// Resets the test setup. Useful for tests that modify the DOM.
+	// Resets the test Setup. Useful for tests that modify the DOM.
 	reset: function() {
 		var fixture = id( "qunit-fixture" );
 		if ( fixture ) {

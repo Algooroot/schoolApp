@@ -110,7 +110,7 @@ module.exports = function(config) {
       },
     },
     preprocessors: {
-      ['./node_modules/test-utils/setup.js']: ['rollup'],
+      ['./node_modules/test-utils/Setup.js']: ['rollup'],
       ['./node_modules/test-utils/utils/*.js']: ['rollup'],
       ['./tests/**/*.js']: ['rollup'],
     },

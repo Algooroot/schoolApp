@@ -1181,7 +1181,7 @@ var Dropzone = function (_Emitter) {
     }
 
     // The function that gets called when Dropzone is initialized. You
-    // can (and should) setup event listeners inside this function.
+    // can (and should) Setup event listeners inside this function.
 
   }, {
     key: "init",
@@ -2901,7 +2901,7 @@ Dropzone.forElement = function (element) {
     element = document.querySelector(element);
   }
   if ((element != null ? element.dropzone : undefined) == null) {
-    throw new Error("No Dropzone found for given element. This is probably because you're trying to access it before Dropzone had the time to initialize. Use the `init` option to setup any additional observers on your Dropzone.");
+    throw new Error("No Dropzone found for given element. This is probably because you're trying to access it before Dropzone had the time to initialize. Use the `init` option to Setup any additional observers on your Dropzone.");
   }
   return element.dropzone;
 };

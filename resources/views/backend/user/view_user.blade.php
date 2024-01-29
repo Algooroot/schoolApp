@@ -12,7 +12,7 @@
                         <div class="box">
                             <div class="box-header with-border">
                                 <h3 class="box-title">User List</h3>
-                                <a href="" style="float: right;" class="btn btn-success mb-5">Add User</a>
+                                <a href="{{route('users.add')}}" style="float: right;" class="btn btn-success mb-5">Add User</a>
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">
@@ -20,37 +20,29 @@
                                     <table id="example1" class="table table-bordered table-striped">
                                         <thead>
                                         <tr>
-                                            <th>SL</th>
+                                            <th width="5%">SL</th>
                                             <th>Role</th>
                                             <th>Name</th>
                                             <th>Email</th>
-                                            <th>Action</th>
+                                            <th width="25%">Action</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                             @foreach($allData as $key=> $user)
                                                 <tr>
                                                     <td>{{$key+1}}</td>
-                                                    <td></td>
+                                                    <td>{{$user->usertype}}</td>
                                                     <td>{{$user->name}}</td>
                                                     <td>{{$user->email}}</td>
                                                     <td>
-                                                        <a href="" class="btn btn-info">Edit</a>
-                                                        <a href="" class="btn btn-danger">Delete</a>
+                                                        <a href="{{route('users.edit', $user->id)}}" class="btn btn-info">Edit</a>
+                                                        <a href="{{route('users.delete', $user->id)}}" class="btn btn-danger" id="delete">Delete</a>
                                                     </td>
 
                                                 </tr>
                                             @endforeach
                                         </tbody>
-                                        <tfoot>
-                                        <tr>
-                                            <th>SL</th>
-                                            <th>Role</th>
-                                            <th>Name</th>
-                                            <th>Email</th>
-                                            <th>Action</th>
-                                        </tr>
-                                        </tfoot>
+
                                     </table>
                                 </div>
                             </div>

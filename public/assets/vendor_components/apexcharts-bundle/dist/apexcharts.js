@@ -28990,7 +28990,7 @@
 
         this.data.parseData(ser); // this is a good time to set theme colors first
 
-        this.theme.init(); // as markers accepts array, we need to setup global markers for easier access
+        this.theme.init(); // as markers accepts array, we need to Setup global markers for easier access
 
         var markers = new Markers(this);
         markers.setGlobalMarkerSize(); // labelFormatters should be called before dimensions as in dimensions we need text labels width

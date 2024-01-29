@@ -17,6 +17,8 @@
 	<link rel="stylesheet" href="{{asset('backend/css/style.css')}}">
 	<link rel="stylesheet" href="{{asset('backend/css/skin_color.css')}}">
 
+	<link rel="stylesheet" href="{{asset('backend/css/toastr.css')}}">
+
   </head>
 
 <body class="hold-transition dark-skin sidebar-mini theme-primary fixed">
@@ -55,6 +57,58 @@
 	<!-- Sunny Admin App -->
 	<script src="{{asset('backend/js/template.js')}}"></script>
 	<script src="{{asset('backend/js/pages/dashboard.js')}}"></script>
+
+    <script src="{{asset('backend/js/sweetalert2/sweetalert2.all.js')}}"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(document).on('click', '#delete', function (e) {
+                e.preventDefault();
+                var link = $(this).attr("href");
+                // console.log(link);
+                swal({
+                    title: 'Are you sure you want to delete this image?',
+                    text: "If you're not you can cancel the action!",
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    cancelButtonText: 'cancel',
+                    confirmButtonText: 'Yes, delete it!'
+                }).then(function(result){
+                    if (result.value) {
+                        window.location.href = link
+                        swal({
+                            title: 'Ok',
+                            text: "Data deleted",
+                            type: 'success',
+                        })
+                    }
+
+                })
+            })
+        })
+    </script>
+
+	<script src="{{asset('backend/js/toastr.min.js')}}"></script>
+    <script>
+        @if(Session::has('message'))
+        var type = "{{ Session::get('alert-type','info') }}"
+        switch(type){
+            case 'info':
+                toastr.info(" {{ Session::get('message') }} ");
+                break;
+            case 'success':
+                toastr.success(" {{ Session::get('message') }} ");
+                break;
+            case 'warning':
+                toastr.warning(" {{ Session::get('message') }} ");
+                break;
+            case 'error':
+                toastr.error(" {{ Session::get('message') }} ");
+                break;
+        }
+        @endif
+    </script>
 
 </body>
 </html>

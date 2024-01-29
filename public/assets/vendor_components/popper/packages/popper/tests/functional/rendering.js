@@ -1,7 +1,7 @@
 import isNative from '../../src/utils/isNative';
 import makePopperFactory from '../utils/makePopperFactory';
 import makeConnectedElement from '@popperjs/test-utils/utils/makeConnectedElement';
-import '@popperjs/test-utils/setup';
+import '@popperjs/test-utils/Setup';
 
 describe('[rendering]', () => {
   const makePopper = makePopperFactory();
